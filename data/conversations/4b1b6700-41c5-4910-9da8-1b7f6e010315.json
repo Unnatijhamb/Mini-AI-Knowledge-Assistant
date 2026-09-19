@@ -1,0 +1,347 @@
+{
+  "id": "4b1b6700-41c5-4910-9da8-1b7f6e010315",
+  "collection_name": "dm_4b1b670041c549109da81b7f",
+  "title": "What is the main objective of the proposed hyperlocal f...",
+  "created_at": "2026-09-19T22:30:24.476448",
+  "updated_at": "2026-09-19T22:34:42.044447",
+  "document_names": [
+    "Hyperlocal_Flood_Prediction_LitReview_1.pdf"
+  ],
+  "document_stats": [
+    {
+      "filename": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+      "pages": 9,
+      "chunks": 27
+    }
+  ],
+  "document_summaries": {
+    "Hyperlocal_Flood_Prediction_LitReview_1.pdf": "The paper proposes a multi‑source data‑fusion framework for hyperlocal flood forecasting that combines Sentinel‑1 SAR imagery, a digital elevation model, satellite and gauge rainfall products, and river‑gauge water‑level time series within a common spatial‑temporal reference frame. It implements a ConvLSTM for short‑horizon runoff prediction, a graph neural network to encode upstream‑downstream river connectivity, and a U‑Net segmentation module to map SAR‑derived flood extents, merges their outputs into a unified flood‑risk and depth estimate, validates the results against India Meteorological Department observations, and adds an explainability layer for source‑wise attribution. Researchers in hydrology and machine learning, urban planners, disaster‑management agencies, and technology developers pursuing patent‑eligible flood‑prediction solutions will find the methodology and results directly applicable to street‑level early‑warning systems."
+  },
+  "messages": [
+    {
+      "role": "user",
+      "content": "What is the main objective of the proposed hyperlocal flood prediction system?"
+    },
+    {
+      "role": "assistant",
+      "content": "The proposed hyperlocal flood prediction system is intended to **forecast the timing, onset, and short‑term evolution of specific flood events at a hyperlocal scale** by fusing multiple data sources such as satellite imagery, rainfall measurements, and topographic information. This moves beyond static, event‑independent flood‑susceptibility mapping toward real‑time, event‑driven flood forecasting.",
+      "type": "text",
+      "sources": [
+        {
+          "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+          "page": 1,
+          "best_sentence": "Paper 3: Hyperlocal Flood Prediction"
+        },
+        {
+          "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+          "page": 6,
+          "best_sentence": "proposed hyperlocal forecasting system."
+        },
+        {
+          "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+          "page": 9,
+          "best_sentence": "Liao, et al., \"A ConvLSTM-Based Model for Urban Flood Prediction Under Dynamic"
+        }
+      ],
+      "confidence_score": 0.6982952356338501,
+      "followup_questions": [
+        "Which data sources are fused for hyperlocal flood forecasting?",
+        "What benchmarking metric is used to evaluate susceptibility outputs?",
+        "What limitation is noted for the AI surrogate model?"
+      ]
+    },
+    {
+      "role": "user",
+      "content": "Which data sources are fused for hyperlocal flood forecasting?"
+    },
+    {
+      "role": "assistant",
+      "content": "The fused data sources for the hyperlocal flood‑forecasting pipeline are:\n\n- **Sentinel‑1 SAR imagery**  \n- **Digital Elevation Model (DEM)** (topographic information)  \n- **Satellite‑derived rainfall products**  \n- **Gauge‑derived rainfall products**  \n- **River‑gauge water‑level time‑series**  \n\nThese five inputs are combined within a common spatial and temporal reference frame for the machine‑learning model.",
+      "type": "text",
+      "sources": [
+        {
+          "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+          "page": 1,
+          "best_sentence": "Multi-Source Data Fusion for Hyperlocal Flood Forecasting Using"
+        },
+        {
+          "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+          "page": 2,
+          "best_sentence": "Multi-Source Data Fusion for Hyperlocal Flood Forecasting Using Satellite, Rainfall, and Topographic"
+        },
+        {
+          "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+          "page": 9,
+          "best_sentence": "Eldho, \"Machine learning-driven flood hazard assessment: integrating SAR and elevation"
+        },
+        {
+          "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+          "page": 4,
+          "best_sentence": "\"TerrainFloodSense: Improving seamless flood mapping with cloudy satellite"
+        }
+      ],
+      "confidence_score": 0.8114943504333496,
+      "followup_questions": [
+        "Which deep learning architecture is used for forecasting?",
+        "What baseline configurations are used for quantitative comparison?",
+        "What spatial resolution does the hyperlocal output target?"
+      ]
+    },
+    {
+      "role": "user",
+      "content": "draw the flowchart for this document"
+    },
+    {
+      "role": "assistant",
+      "content": "Here is the flowchart based on the document content:",
+      "type": "diagram",
+      "mermaid_code": "flowchart TD\nA[\"River networks are tree-like\"]\nB[\"High resistance distances\"]\nC[\"Causes over-squashing\"]\nD[\"Reachability-based graph transformation\"]\nE[\"Add edges to densify topology\"]\nF[\"Reduce resistance distances\"]\nG[\"Transformed graph input to GNN\"]\nH[\"Predict water level at gauges\"]\nI[\"Improved 24h forecast vs 14h baseline\"]\nJ[\"ConvLSTM models rainfall-runoff\"]\nK[\"U-Net segments flood extent\"]\nL[\"Fuse ConvLSTM, GNN, U-Net outputs\"]\nM[\"Explainability layer added\"]\nN[\"Evaluate against IMD observations\"]\nA --> B\nB --> C\nC --> D\nD --> E\nE --> F\nF --> G\nG --> H\nH --> I\nJ --> L\nG --> L\nK --> L\nL --> M\nM --> N",
+      "sources": [
+        {
+          "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+          "page": 4
+        },
+        {
+          "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+          "page": 2
+        },
+        {
+          "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+          "page": 5
+        },
+        {
+          "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": "give the summary "
+    },
+    {
+      "role": "assistant",
+      "content": "**Summary of the Provided Document**\n\nThe document outlines a research project titled **“Multi‑Source Data Fusion for Hyperlocal Flood Forecasting Using Satellite, Rainfall, and Topographic Information.”** Its core focus is the development of a flood‑prediction system that integrates multiple data sources—Sentinel‑1 SAR imagery, a Digital Elevation Model (DEM), satellite and gauge rainfall products, and river‑gauge water‑level time series—into a single machine‑learning pipeline.\n\n### Key Elements  \n\n| Aspect | Details |\n|--------|---------|\n| **Purpose of Multi‑Source Fusion** | Combine SAR, DEM, rainfall, and gauge data to produce hyperlocal (ward‑level or street‑level) flood forecasts, rather than coarse catchment‑scale estimates. |\n| **Technical Novelty** | The explicit combination of these three input families (satellite SAR, rainfall, topography) is highlighted as a defensible claim for patentability. |\n| **Objectives** | 1. Build a data‑fusion pipeline that aligns all inputs in a common spatial‑temporal frame for ML.<br>2. Train a spatiotemporal ConvLSTM model to forecast short‑horizon rainfall‑runoff and inundation at sub‑catchment or street resolution.<br>3. Model river‑gauge connectivity with a graph neural network, ensuring upstream information is incorporated without relying on separate forecasting components. |\n| **Evaluation Requirement** | Collect quantitative evidence comparing the fused hyperlocal output against single‑source baselines (SAR‑only, rainfall‑only, DEM‑only) to support academic assessment and future patent examination. |\n| **Relevant References** | • Sadhwani & Eldho (2026) – SAR + elevation for flood mapping.<br>• Xiao et al. (2025) – ConvLSTM for urban flood prediction.<br>• Wang et al. (2025) – River network topology in AI flood forecasting.<br>• Veedu & Reghunadhan (2025) – Multi‑source SAR fusion with ESA World Cover.<br>• “TerrainFloodSense” (2025) – Uses water‑occurrence and terrain data to overcome cloud cover in optical flood mapping. |\n| **Additional Note on TerrainFloodSense** | This referenced paper addresses the limitation of optical imagery under persistent cloud cover by fusing water‑occurrence information with terrain data, enabling seamless flood mapping when optical images are unavailable. |\n\n### Overall Takeaway  \n\nThe project aims to create a **hyperlocal flood‑forecasting system** that leverages a **fusion of satellite SAR, topographic DEM, and rainfall (both satellite and gauge) data** within a deep‑learning framework (ConvLSTM plus graph neural networks). By demonstrating superior performance over single‑source baselines, the work seeks both **academic validation** and **patent‑level technical novelty**.",
+      "type": "text",
+      "sources": [
+        {
+          "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+          "page": 1,
+          "best_sentence": "Multi-Source Data Fusion for Hyperlocal Flood Forecasting Using"
+        },
+        {
+          "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+          "page": 9,
+          "best_sentence": "Reghunadhan, \"Multi-source Data Fusion for Flood Classification Using SAR Images with"
+        },
+        {
+          "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+          "page": 2,
+          "best_sentence": "Multi-Source Data Fusion for Hyperlocal Flood Forecasting Using Satellite, Rainfall, and Topographic"
+        },
+        {
+          "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+          "page": 4,
+          "best_sentence": "\"TerrainFloodSense: Improving seamless flood mapping with cloudy satellite"
+        }
+      ],
+      "confidence_score": 0.06789606809616089,
+      "followup_questions": [
+        "Which satellite sensor is used in the data fusion?",
+        "What deep learning model forecasts flood evolution?",
+        "Which single-source baselines are used for performance comparison?"
+      ]
+    }
+  ],
+  "chunks": [
+    {
+      "page_content": "DBS PROJECT \nPaper 3: Hyperlocal Flood Prediction \nMulti-Source Data Fusion for Hyperlocal Flood Forecasting Using \nSatellite, Rainfall, and Topographic Information \nReg. Nos.: 24BCE1517, 24BCE5201 \nSubmission Date: 05 August 2026",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 1
+      }
+    },
+    {
+      "page_content": "1. Title \nMulti-Source Data Fusion for Hyperlocal Flood Forecasting Using Satellite, Rainfall, and Topographic \nInformation \nThe title identifies three properties of this work. First, the term multi-source data fusion indicates that Sentinel-1 \nSAR imagery, a Digital Elevation Model, rainfall products, and river-gauge time series are combined within a \nsingle learning pipeline rather than used separately. Second, the term hyperlocal indicates that the output \nresolution is intended to support ward-level or street-level warning rather than whole-catchment discharge \nestimation alone. Third, naming the three input families in the title supports a defensible claim of technical \nnovelty. This is a relevant consideration for a patent application, since claims are strongest when they correspond \nto a specific, named combination of inputs and processing stages rather than a general concept. \n2. Objectives \n1. To design a data-fusion pipeline that combines Sentinel-1 SAR imagery, a Digital Elevation Model, \nsatellite and gauge rainfall products, and river-gauge water-level time series within a common spatial \nand temporal reference frame suitable for machine learning. \n2. To develop and train a spatiotemporal deep learning model using ConvLSTM to forecast short-horizon \nrainfall-runoff behavior and inundation evolution at a hyperlocal, sub-catchment or street-level spatial \nresolution. \n3. To model river and gauge-station connectivity using a graph neural network so that upstream",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 2
+      }
+    },
+    {
+      "page_content": "rainfall-runoff behavior and inundation evolution at a hyperlocal, sub-catchment or street-level spatial \nresolution. \n3. To model river and gauge-station connectivity using a graph neural network so that upstream \nconditions and network topology inform downstream hyperlocal flood risk, addressing the over-\nsquashing limitation reported in recent river-network GNN research. \n4. To develop a U-Net-based semantic segmentation module that maps real-time flood extent from \nSentinel-1 SAR backscatter, combined with ancillary land-cover and surface-water-probability data to \nreduce false positives. \n5. To combine the outputs of the ConvLSTM, GNN, and U-Net modules into a single hyperlocal flood-\nrisk and depth-estimation output, and to evaluate this output against India Meteorological Department \nobservations and existing single-source baselines. \n6. To incorporate an explainability layer, such as feature attribution or Accumulated Local Effects, so that \nthe contribution of each data source and conditioning factor to a given prediction can be examined and \nverified. \n7. To document the specific combination of fusion steps and model architecture as a candidate technical \ncontribution for patent filing, distinguished from the prior art identified in the literature review. \n3. Literature Review \nThe review below covers ten peer-reviewed papers published in 2025 and 2026 in IEEE, Elsevier, and Springer",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 2
+      }
+    },
+    {
+      "page_content": "contribution for patent filing, distinguished from the prior art identified in the literature review. \n3. Literature Review \nThe review below covers ten peer-reviewed papers published in 2025 and 2026 in IEEE, Elsevier, and Springer \nvenues. These papers were selected to cover the technical areas relevant to the proposed project: SAR-based flood \nmapping, spatiotemporal deep learning using ConvLSTM, graph-based river-network forecasting, multi-source \nrainfall and terrain fusion, flood susceptibility mapping, and early-warning system integration. \n3.1 P1. K. Sadhwani and T. I. Eldho, \"Machine learning-driven flood hazard \nassessment: integrating SAR and elevation data for inundation mapping and depth \nestimation,\" Natural Hazards, vol. 122, p. 177, 2026. Springer. \nSummary. This study presents a region-based dual machine-learning framework for flood hazard assessment that \nseparately addresses flood-prone area classification and flood depth estimation, arguing that these two tasks \nrequire different feature emphasis and are best handled as distinct models rather than a single combined one.",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 2
+      }
+    },
+    {
+      "page_content": "Methodology. Flood inventory points are generated from Sentinel-1 SAR imagery processed on Google Earth \nEngine, using backscatter thresholding to identify inundated pixels across multiple past flood events. These points \nare paired with DEM-derived conditioning factors, namely slope, elevation, drainage density, distance to river, \nland use and land cover, and soil type. Several classifiers, including bagged decision trees, are trained on this \ncombined feature set and compared using standard classification metrics. \nKey results. The bagged decision tree classifier achieved the highest performance among the models tested, with \n93.2% classification accuracy and an area under the ROC curve of 0.933 for identifying flood-prone areas. Feature \nimportance analysis ranked slope, elevation, and distance to river as the three most influential predictors, ahead \nof land cover and soil type. \nRelevance to this project. This work confirms that combining SAR-derived flood observations with DEM-\nderived terrain features is an effective and well-validated approach, and it gives an empirical ranking of which \nterrain factors matter most. These findings directly inform the choice of terrain-conditioning features for the \nproposed system. \nIdentified gap. Flood classification and depth estimation remain two independent models rather than a single \nintegrated forecasting pipeline, and neither model consumes rainfall or river-gauge time series, so the output is a",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 3
+      }
+    },
+    {
+      "page_content": "proposed system. \nIdentified gap. Flood classification and depth estimation remain two independent models rather than a single \nintegrated forecasting pipeline, and neither model consumes rainfall or river-gauge time series, so the output is a \nstatic hazard assessment rather than a time-aware forecast. \n3.2 P2. J. Xiao, Z. Wang, Y. Liao, et al., \"A ConvLSTM-Based Model for Urban \nFlood Prediction Under Dynamic Rainfall Patterns and Exploration on Its \nExtrapolation Capability,\" International Journal of Disaster Risk Science, 2025. \nSpringer. \nSummary. This paper addresses a specific weakness in prior ConvLSTM-based flood models, namely their \nreliance on the simplifying assumption of spatially uniform rainfall. The authors instead train and test their model \nunder rainstorms whose intensity varies across the basin, which is closer to real storm behavior in urban \ncatchments. \nMethodology. A hydrodynamic simulation model (SWMM, the Storm Water Management Model) is used to \ngenerate paired rainfall and inundation-depth rasters across many synthetic storm scenarios with varying spatial \nrainfall distribution. A ConvLSTM network is then trained to map an input rainfall sequence directly to the \nresulting spatial inundation sequence, functioning as a fast surrogate for the slower hydrodynamic solver. The \nmodel is additionally tested on rainfall spatial patterns and storm center locations that were withheld from training, \nto probe its extrapolation behavior.",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 3
+      }
+    },
+    {
+      "page_content": "resulting spatial inundation sequence, functioning as a fast surrogate for the slower hydrodynamic solver. The \nmodel is additionally tested on rainfall spatial patterns and storm center locations that were withheld from training, \nto probe its extrapolation behavior. \nKey results. The trained ConvLSTM reproduces full-basin inundation extent in approximately two seconds per \nscenario, compared to the much longer runtime of the underlying hydrodynamic solver, while maintaining close \nagreement with the simulated ground truth. The model also generalizes reasonably well to previously unseen \nrainfall center locations without retraining, indicating it captures genuine spatiotemporal relationships rather than \nmemorizing specific storm patterns. \nRelevance to this project. The training methodology, in which simulated rainfall and inundation pairs teach a \nConvLSTM to predict spatial flood evolution rapidly, is directly transferable to the forecasting component of the \nproposed system, and the extrapolation testing protocol is a useful template for validating the proposed model on \nunseen rainfall events. \nIdentified gap. The ground truth used for both training and evaluation comes entirely from a physical simulation \nrather than from satellite-observed flood extent, so Sentinel-1 SAR data is never used to validate, correct, or \nground the model's predictions against real observed floods. \n3.3 P3. H. Wang, J. Chen, Y. Zheng, et al., \"Accelerating flood warnings by 10 hours:",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 3
+      }
+    },
+    {
+      "page_content": "rather than from satellite-observed flood extent, so Sentinel-1 SAR data is never used to validate, correct, or \nground the model's predictions against real observed floods. \n3.3 P3. H. Wang, J. Chen, Y. Zheng, et al., \"Accelerating flood warnings by 10 hours: \nthe power of river network topology in AI-enhanced flood forecasting,\" npj Natural \nHazards, vol. 2, 2025. Springer Nature.",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 3
+      }
+    },
+    {
+      "page_content": "Summary. This paper investigates why graph neural networks, despite the natural correspondence between river \nnetwork structure and graph structure, have historically underperformed at exploiting that structure for flood \nforecasting, and traces the problem to a specific structural property of river networks. \nMethodology. The authors show that river networks form tree-like graphs with high resistance distances between \nnodes, which causes over-squashing, a known failure mode in which information from distant nodes is compressed \nand lost as it propagates through the network during message passing. To address this, they propose a reachability-\nbased graph transformation that adds edges to densify the topology and reduce these resistance distances, without \ndiscarding the underlying hydrological connectivity. The transformed graph is then used as input to a GNN trained \nto predict water level at each gauged node. \nKey results. The transformed GNN reaches the same 24-hour-ahead water-level prediction accuracy that a \nbaseline EA-LSTM model only reaches at a 14-hour horizon, corresponding to a 71 percent improvement in usable \nwarning lead time, and it also better captures rare, extreme flood events by retaining influence from distal upstream \nnodes. \nRelevance to this project. This gives a specific, benchmarked method for a known limitation of graph neural \nnetworks on river networks, and the graph-densification technique can be adopted directly within the connectivity-",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "page_content": "nodes. \nRelevance to this project. This gives a specific, benchmarked method for a known limitation of graph neural \nnetworks on river networks, and the graph-densification technique can be adopted directly within the connectivity-\naware GNN component of the proposed system to preserve upstream information over longer forecast horizons. \nIdentified gap. Predictions are generated only at gauged nodes that already have monitoring infrastructure. The \nmethod does not extend to ungauged, hyperlocal locations between gauges, and it does not incorporate remote-\nsensing-derived flood extent as either an input or a validation signal. \n3.4 P4. J. T. Veedu and R. Reghunadhan, \"Multi-source Data Fusion for Flood \nClassification Using SAR Images with ESA World Cover Map and Global Surface \nWater Probability,\" in Pattern Recognition. ICPR 2024 International Workshops and \nChallenges, Lecture Notes in Computer Science, vol. 15616, Springer, 2025. \nSummary. This paper addresses a well-known source of error in SAR-based flood mapping, namely that radar \nshadow and double-bounce scattering from buildings and vegetation can be misclassified as open water, by \nsupplementing the SAR signal with two static ancillary data layers. \nMethodology. Sentinel-1 SAR backscatter intensity is combined, channel-wise, with the ESA WorldCover land-\ncover classification product and the JRC Global Surface Water occurrence probability layer. A classifier is trained",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "page_content": "supplementing the SAR signal with two static ancillary data layers. \nMethodology. Sentinel-1 SAR backscatter intensity is combined, channel-wise, with the ESA WorldCover land-\ncover classification product and the JRC Global Surface Water occurrence probability layer. A classifier is trained \non this three-channel input to distinguish flooded from non-flooded pixels, and its output is compared against a \nSAR-only baseline to isolate the contribution of the ancillary layers. \nKey results. Incorporating the land-cover and surface-water-probability layers measurably reduces false-positive \nflood detections in areas prone to SAR shadow and double-bounce artifacts, such as dense urban blocks and \nforested riverbanks, compared to the SAR-only classifier. \nRelevance to this project. This is a practical, reproducible fusion recipe for cleaning up SAR-based flood labels \nbefore they are used for training or evaluation, and this preprocessing step can be applied directly to the Sentinel-\n1 input before it reaches the U-Net segmentation module in the proposed system. \nIdentified gap. The fusion described is limited to per-pixel static classification of a single image pair. It has no \ntemporal or forecasting component, and rainfall or river-gauge data play no role in the pipeline. \n3.5 P5. \"TerrainFloodSense: Improving seamless flood mapping with cloudy satellite \nimagery via water occurrence and terrain data fusion,\" International Journal of",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "page_content": "temporal or forecasting component, and rainfall or river-gauge data play no role in the pipeline. \n3.5 P5. \"TerrainFloodSense: Improving seamless flood mapping with cloudy satellite \nimagery via water occurrence and terrain data fusion,\" International Journal of \nApplied Earth Observation and Geoinformation, 2025. Elsevier. \nSummary. This paper targets a practical limitation of optical-imagery-based flood mapping: persistent cloud \ncover during and after storm events frequently leaves gaps in the flood map exactly when and where the \ninformation is most needed.",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "page_content": "Methodology. Historical water-occurrence statistics, which describe how often a given pixel has been observed \nas water over a long time series, are fused with DEM-derived terrain features to infer likely inundation in cloud-\nobscured regions of an optical scene. The fused output is designed to produce a single, seamless flood map rather \nthan one with gaps corresponding to cloud cover. \nKey results. The fused terrain-and-occurrence approach produces continuous flood extent maps even when a \nlarge fraction of the optical scene is cloud-obscured, filling gaps that a cloud-masked optical-only product would \notherwise leave blank, while remaining consistent with the visible, cloud-free portions of the same scene. \nRelevance to this project. This addresses the same underlying problem of cloud occlusion that motivates using \nSAR imagery, which penetrates cloud cover, in the proposed system. The terrain-aware gap-filling approach can \nserve as an independent cross-check for the SAR-based U-Net flood-extent output, particularly during multi-day \nstorm events with sustained cloud cover. \nIdentified gap. The method produces a map of current or past flood extent rather than a forecast of future extent. \nRainfall forcing and a learned temporal model are not part of the framework, so it cannot anticipate flooding \nbefore it is already visible in imagery. \n3.6 P6. Z. Li, Z. Zhou, H. Wang, et al., \"Artificial intelligence-incorporated prediction",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "page_content": "Rainfall forcing and a learned temporal model are not part of the framework, so it cannot anticipate flooding \nbefore it is already visible in imagery. \n3.6 P6. Z. Li, Z. Zhou, H. Wang, et al., \"Artificial intelligence-incorporated prediction \nfor urban flooding processes in the past 20 years: A critical review,\" Environmental \nModelling & Software, 2025. Elsevier. \nSummary. This review traces two decades of AI-based urban flood prediction research and organizes the field's \nprogression from early CNN-based static classifiers through to more recent CNN-RNN hybrid models capable of \nrepresenting both spatial and temporal structure. \nMethodology. The review systematically surveys published urban flood prediction studies, categorizing them by \ninput data type, model architecture, spatial scale, and evaluation approach, and cross-compares their reported \nstrengths and weaknesses to identify patterns that recur across otherwise unrelated studies. \nKey results. The review identifies several persistent, unresolved limitations across the field: significant regional \nvariability between study sites that limits model transferability, incomplete quantification of urban-specific \nconditioning factors such as impervious surface ratio and drainage-pipe density, and insufficient integration of \nvulnerability and exposure assessment into prediction outputs. \nRelevance to this project. This establishes the current state of the art and documents, in the authors' own analysis,",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "page_content": "conditioning factors such as impervious surface ratio and drainage-pipe density, and insufficient integration of \nvulnerability and exposure assessment into prediction outputs. \nRelevance to this project. This establishes the current state of the art and documents, in the authors' own analysis, \nprecisely the limitations that the proposed multi-source, multi-model system is designed to address, which \nsupports the rationale for combining ConvLSTM, GNN, and U-Net components rather than relying on any single \nmethod. \nIdentified gap. As a review article rather than an original study, it does not itself propose, implement, or validate \na new fused architecture. It synthesizes the gap that the proposed project aims to fill rather than filling it. \n3.7 P7. T. Q. Dang, B. H. Tran, Q. N. Le, et al., \"Integrating Intelligent Hydro-\ninformatics into an effective Early Warning System for risk-informed urban flood \nmanagement,\" Environmental Modelling & Software, vol. 183, art. 106246, 2025. \nElsevier. \nSummary. This study addresses the systems-engineering side of flood forecasting, namely how a predictive \nmodel is actually connected to real-time data feeds and delivered to end users, rather than focusing purely on \nprediction accuracy in isolation. \nMethodology. An AI surrogate model is trained on the output of the MIKE+ physically based hydrodynamic \nmodel and embedded within an early warning platform built on a PostgreSQL and PostGIS spatial database, a",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "page_content": "prediction accuracy in isolation. \nMethodology. An AI surrogate model is trained on the output of the MIKE+ physically based hydrodynamic \nmodel and embedded within an early warning platform built on a PostgreSQL and PostGIS spatial database, a \nGeoServer map-serving layer, and a Leaflet-based web front end. Real-time telemetry from river and rainfall \ngauges is ingested through APIs and used to drive both the physical model, for periodic recalibration, and the \nfaster AI surrogate, for continuous public-facing updates.",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "page_content": "Key results. The integrated platform demonstrates that a trained surrogate can reproduce the physically based \nmodel's flood outputs closely enough to support real-time communication, while running fast enough for \ncontinuous operation, and the web-based visualization layer is shown to successfully communicate location-\nspecific flood risk to end users. \nRelevance to this project. This provides a tested systems architecture for combining a learned surrogate model \nwith a physical model and live gauge telemetry, which is directly relevant to the deployment and alerting layer \nenvisioned for the proposed hyperlocal warning system, independent of which specific forecasting model sits \nunderneath it. \nIdentified gap. The AI surrogate is trained on the output of the physical hydrodynamic model rather than directly \non satellite observations, so it inherits any bias present in the underlying MIKE+ model and is never evaluated \nagainst independent, SAR-derived flood extent. \n3.8 P8. M. Mohajane, S. A. Ali, S. Hitouri, et al., \"Machine Learning-Based Flood \nSusceptibility Mapping Using Geoenvironmental Factors in Central Morocco,\" Earth \nSystems and Environment, 2026. Springer. \nSummary. This study asks which of a wide range of environmental conditioning factors, spanning topographic, \ngeologic, climatic, and land-cover domains, are most predictive of flood susceptibility in a data-scarce, semi-arid \nwatershed setting.",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "page_content": "Systems and Environment, 2026. Springer. \nSummary. This study asks which of a wide range of environmental conditioning factors, spanning topographic, \ngeologic, climatic, and land-cover domains, are most predictive of flood susceptibility in a data-scarce, semi-arid \nwatershed setting. \nMethodology. Sixteen conditioning factors are compiled for the Tensift watershed in central Morocco, and a \nflood inventory of 228 points, split evenly between flood and non-flood locations, is used to train and test three \nmachine learning models: Classification and Regression Trees, Support Vector Machines, and Extreme Gradient \nBoosting. Model performance is compared using the area under the receiver operating characteristic curve. \nKey results. All three models achieve strong discriminative performance on the flood inventory, with the CART \nclassifier achieving the highest AUC (0.882), ahead of SVM (0.860) and XGBoost (0.833), and the analysis \nidentifies which of the sixteen conditioning factors contribute most to the models' predictions. \nRelevance to this project. This provides a validated set of static conditioning factors beyond DEM and SAR \nalone, which can be added as auxiliary channels to strengthen the terrain-conditioning input of the proposed \nsystem, and it offers a benchmarking protocol using AUC-ROC that can be reused to evaluate the proposed \nsystem's own susceptibility outputs.",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "page_content": "alone, which can be added as auxiliary channels to strengthen the terrain-conditioning input of the proposed \nsystem, and it offers a benchmarking protocol using AUC-ROC that can be reused to evaluate the proposed \nsystem's own susceptibility outputs. \nIdentified gap. Flood susceptibility here is a static, event-independent classification problem. It does not forecast \nthe timing, onset, or short-term evolution of any specific flood event, which is the central requirement of the \nproposed hyperlocal forecasting system. \n3.9 P9. A. Tella, Q. B. Pham, I. Zahidi, et al., \"Advancing Flood Susceptibility \nMapping with Explainable AI: A Novel Application of Accumulated Local Effects \n(ALE),\" Water Resources Management, vol. 40, p. 140, 2026. Springer. \nSummary. This paper addresses the trade-off between predictive accuracy and interpretability in flood \nsusceptibility modeling, arguing that ensemble models are often accurate but opaque, which limits their usefulness \nfor decision-makers who need to understand why a given area is flagged as high-risk. \nMethodology. Accumulated Local Effects, an explainable AI technique that isolates the effect of a single input \nfeature on model output while accounting for correlation between features, is applied to three susceptibility \nmodels, logistic regression, random forest, and XGBoost, trained on rainfall, distance to river, elevation, slope, \nand the Normalized Difference Water Index, among other inputs.",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "page_content": "feature on model output while accounting for correlation between features, is applied to three susceptibility \nmodels, logistic regression, random forest, and XGBoost, trained on rainfall, distance to river, elevation, slope, \nand the Normalized Difference Water Index, among other inputs. \nKey results. The ensemble models, random forest and XGBoost, achieved 94 percent classification accuracy and \nan AUC of 0.98, clearly outperforming logistic regression, while the ALE analysis transparently attributed \nsusceptibility to specific, physically interpretable rainfall thresholds and the influence of urban infrastructure, \nwithout sacrificing this predictive performance.",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "page_content": "Relevance to this project. This motivates including an explainability layer in the proposed system, since such a \nlayer strengthens both the scientific credibility of the results and the technical-contribution narrative needed to \nsupport a future patent application, by making clear exactly which fused input drove a given hyperlocal prediction. \nIdentified gap. Interpretability here is demonstrated only for tabular, tree-based susceptibility models. It has not \nyet been extended to deep spatiotemporal architectures such as ConvLSTM or graph neural networks, which form \nthe core of the proposed system. \n3.10 P10. Z. Wang, B. He, C. Wang, B. Xu, and C. Bai, \"Precipitation retrieval \nintegrating multiple satellite observations: A dataset and a framework,\" IEEE \nTransactions on Geoscience and Remote Sensing, 2025. IEEE. \nSummary. This paper addresses the accuracy limitations of any single-sensor satellite rainfall product, which \ntypically struggle in regions with sparse ground-gauge coverage available for bias correction, by combining \nobservations from multiple satellite sensors within one retrieval framework. \nMethodology. A dataset is constructed by pairing observations from several satellite-based precipitation sensors \nover the same locations and time periods, and a deep learning framework is trained to fuse these multiple \nobservation streams into a single, improved gridded rainfall estimate, evaluated against independent ground-truth \nrainfall measurements.",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 7
+      }
+    },
+    {
+      "page_content": "over the same locations and time periods, and a deep learning framework is trained to fuse these multiple \nobservation streams into a single, improved gridded rainfall estimate, evaluated against independent ground-truth \nrainfall measurements. \nKey results. The fused multi-satellite framework produces rainfall estimates that are more accurate than those \nderived from any individual satellite sensor used on its own, with the largest relative improvement observed in \nregions where ground-gauge density is low and single-sensor products are least reliable. \nRelevance to this project. This framework can directly upgrade the rainfall input to the proposed pipeline. Rather \nthan relying on a single rainfall product or a sparse local gauge network, a fused multi-satellite precipitation \nestimate can serve as one of the input modalities feeding the ConvLSTM and graph neural network components \nof the proposed system. \nIdentified gap. The framework is designed to improve precipitation-field accuracy in isolation and is not coupled \nto any downstream flood-inundation or streamflow forecasting model, so it addresses only the input-quality side \nof the problem.",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 7
+      }
+    },
+    {
+      "page_content": "3.11 Comparative Summary Table \nPaper \nData Sources Used \nCore Method \nScale \nKey Gap vs. Proposed Work \nP1 \nSAR, DEM, land use, soil \nDual ML (bagged tree) \nRegional \nNo rainfall/time-series fusion; two \nseparate models \nP2 \nSimulated rainfall, SWMM \nConvLSTM \nUrban basin \nNo SAR ground truth; simulation-only \ntraining \nP3 \nRiver-gauge network \nGraph-transformed \nGNN \nRiver network \nGauged nodes only; no remote sensing \nP4 \nSAR, WorldCover, GSW \nCNN classification \nPixel-wise \nStatic classification; no forecasting \nP5 \nWater occurrence, DEM \nTerrain-aware fusion \nRegional \nPost-event mapping, not predictive \nP6 \nReview (multi-source) \nCritical review \nUrban \nNo new model proposed \nP7 \nGauge data, hydrodynamic \nmodel \nAI surrogate with \nMIKE+ \nUrban/city \nSurrogate trained on model output, not \nSAR \nP8 \nDEM, geo-environmental \nfactors \nCART, SVM, \nXGBoost \nWatershed \nStatic susceptibility, not event \nforecasting \nP9 \nDEM, rainfall, NDWI \nXAI (ALE) with \nensemble ML \nUrban \nXAI not extended to deep \nspatiotemporal models \nP10 \nMulti-satellite precipitation \nDeep fusion \nframework \nRegional/global \nRainfall only; no inundation coupling \n \n4. Synthesis: Research Gap and Positioning of the Proposed Work \nThe ten papers reviewed above indicate a consistent pattern in the current literature. Studies that fuse SAR and \nDEM data (P1, P4, P5) achieve strong accuracy for static flood extent or susceptibility mapping, but do not",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 8
+      }
+    },
+    {
+      "page_content": "4. Synthesis: Research Gap and Positioning of the Proposed Work \nThe ten papers reviewed above indicate a consistent pattern in the current literature. Studies that fuse SAR and \nDEM data (P1, P4, P5) achieve strong accuracy for static flood extent or susceptibility mapping, but do not \nforecast future conditions. Spatiotemporal deep learning studies (P2) forecast inundation evolution effectively, \nbut are trained on simulated rather than satellite-observed data. Graph-based river-network models (P3) achieve \nsubstantial gains in warning lead time, but operate only at instrumented gauge locations. Rainfall-fusion research \n(P10) improves precipitation input quality without coupling to a downstream inundation model. None of the \nreviewed papers combines SAR-derived flood extent, DEM-based terrain conditioning, multi-satellite rainfall \nfusion, and river-gauge network topology within a single hyperlocal forecasting pipeline that also includes an \nexplainability layer. This combination forms the basis of the technical contribution proposed in Section 2. \n5. Note on Patent Positioning \nThe following are general observations relevant to developing this project toward a patent application. They are \nnot legal advice, and a registered patent agent or attorney should be consulted before any filing is made. \n- \nNovelty and non-obviousness are likely to rest on the specific combination and sequencing of the",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 8
+      }
+    },
+    {
+      "page_content": "not legal advice, and a registered patent agent or attorney should be consulted before any filing is made. \n- \nNovelty and non-obviousness are likely to rest on the specific combination and sequencing of the \nfusion steps, such as the manner in which SAR-derived flood extent is used to correct or gate the \nConvLSTM and GNN forecasts, rather than on any individual component. ConvLSTM, graph neural \nnetworks, and U-Net segmentation are each individually well established in prior art. \n- \nA dated record of architecture decisions, data-pipeline design, and experimental results should be \nmaintained from this stage onward. Patent priority depends on establishing when a specific technical \nidea was conceived and reduced to practice. \n- \nPublic disclosure, including publication of the underlying paper prior to filing, can affect patent rights \nin most jurisdictions. If patenting is a firm objective, a provisional application should be considered \nbefore any conference submission or public release of the complete pipeline.",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 8
+      }
+    },
+    {
+      "page_content": "- \nQuantitative evidence should be collected showing how the fused hyperlocal output performs against \neach single-source baseline, including SAR-only, rainfall-only, and DEM-only configurations. This \ncomparative evidence supports both the academic evaluation and any future patent examination. \n6. References \nK. Sadhwani and T. I. Eldho, \"Machine learning-driven flood hazard assessment: integrating SAR and elevation \ndata for inundation mapping and depth estimation,\" Natural Hazards, vol. 122, p. 177, 2026. Springer. \nJ. Xiao, Z. Wang, Y. Liao, et al., \"A ConvLSTM-Based Model for Urban Flood Prediction Under Dynamic \nRainfall Patterns and Exploration on Its Extrapolation Capability,\" International Journal of Disaster \nRisk Science, 2025. Springer. \nH. Wang, J. Chen, Y. Zheng, et al., \"Accelerating flood warnings by 10 hours: the power of river network \ntopology in AI-enhanced flood forecasting,\" npj Natural Hazards, vol. 2, 2025. Springer Nature. \nJ. T. Veedu and R. Reghunadhan, \"Multi-source Data Fusion for Flood Classification Using SAR Images with \nESA World Cover Map and Global Surface Water Probability,\" in Pattern Recognition. ICPR 2024 \nInternational Workshops and Challenges, Lecture Notes in Computer Science, vol. 15616, Springer, \n2025. \n\"TerrainFloodSense: Improving seamless flood mapping with cloudy satellite imagery via water occurrence and \nterrain data fusion,\" International Journal of Applied Earth Observation and Geoinformation, 2025. \nElsevier.",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 9
+      }
+    },
+    {
+      "page_content": "2025. \n\"TerrainFloodSense: Improving seamless flood mapping with cloudy satellite imagery via water occurrence and \nterrain data fusion,\" International Journal of Applied Earth Observation and Geoinformation, 2025. \nElsevier. \nZ. Li, Z. Zhou, H. Wang, et al., \"Artificial intelligence-incorporated prediction for urban flooding processes in \nthe past 20 years: A critical review,\" Environmental Modelling & Software, 2025. Elsevier. \nT. Q. Dang, B. H. Tran, Q. N. Le, et al., \"Integrating Intelligent Hydro-informatics into an effective Early \nWarning System for risk-informed urban flood management,\" Environmental Modelling & Software, \nvol. 183, art. 106246, 2025. Elsevier. \nM. Mohajane, S. A. Ali, S. Hitouri, et al., \"Machine Learning-Based Flood Susceptibility Mapping Using \nGeoenvironmental Factors in Central Morocco,\" Earth Systems and Environment, 2026. Springer. \nA. Tella, Q. B. Pham, I. Zahidi, et al., \"Advancing Flood Susceptibility Mapping with Explainable AI: A Novel \nApplication of Accumulated Local Effects (ALE),\" Water Resources Management, vol. 40, p. 140, \n2026. Springer. \nZ. Wang, B. He, C. Wang, B. Xu, and C. Bai, \"Precipitation retrieval integrating multiple satellite observations: \nA dataset and a framework,\" IEEE Transactions on Geoscience and Remote Sensing, 2025. IEEE.",
+      "metadata": {
+        "source": "Hyperlocal_Flood_Prediction_LitReview_1.pdf",
+        "page": 9
+      }
+    }
+  ]
+}
