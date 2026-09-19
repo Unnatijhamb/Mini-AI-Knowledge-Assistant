@@ -1,13 +1,13 @@
 streamlit>=1.35.0
 python-dotenv>=1.0.0
 
-# LangChain
-langchain>=0.2.0
-langchain-core>=0.2.0
-langchain-community>=0.2.0
-langchain-groq>=0.1.0
-langchain-chroma>=0.1.0
-langchain-text-splitters>=0.2.0
+# LangChain — pinned to 0.2.x where ConversationalRetrievalChain still lives
+langchain==0.2.16
+langchain-core==0.2.43
+langchain-community==0.2.16
+langchain-groq==0.1.9
+langchain-chroma==0.1.4
+langchain-text-splitters==0.2.4
 
 # Vector store
 chromadb>=0.5.0
